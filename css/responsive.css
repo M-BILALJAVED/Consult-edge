@@ -104,6 +104,10 @@
     .box4 {
         height: 100px;
     }
+
+    .foormargin {
+        margin-top: 2rem !important;
+    }
 }
 
 @media screen and (max-width: 400px) {
