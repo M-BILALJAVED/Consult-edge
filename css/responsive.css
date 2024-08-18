@@ -1,4 +1,8 @@
 @media screen and (max-width: 992px) {
+    .client-btn-wrapper h2 {
+        font-size: 22px !important;
+    }
+
     .header-wrapper .nav-links a {
         float: none;
         display: none;
@@ -38,6 +42,20 @@
     .header-wrapper .nav-links a::after {
         visibility: hidden;
     }
+
+    .feature-wrapper .text-sec {
+        width: 90%;
+        text-align: center;
+    }
+
+    .choose-left {
+        width: 100%;
+    }
+
+    .full-choose-left{
+        padding-top: 2vh !important;
+    }
+
 }
 
 @media screen and (max-width: 390px) {
@@ -64,6 +82,10 @@
     h1 {
         font-size: 45px !important;
     }
+
+    /* h2 {
+        font-size: 15px !important;
+    } */
 
     p,
     .main-btn,
@@ -96,6 +118,11 @@
 
     h5 {
         font-size: 10px !important;
+    }
+
+    .client-btn-wrapper .see-client-btn {
+        padding: 10px 22px;
+        width: 150px !important;
     }
 
     .box1,

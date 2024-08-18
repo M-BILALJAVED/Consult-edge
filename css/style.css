@@ -53,8 +53,7 @@ h1 {
 }
 
 h2 {
-    font-size: 52px;
-    font-weight: bold;
+    font-size: 30px !important;
 }
 
 h3 {
@@ -187,7 +186,7 @@ p {
 .contactus-btn {
     border-radius: 50px;
     background-color: #ea6c00;
-    padding: 10px 22px;
+    padding: 10px 20px;
     width: 150px !important;
     border: none;
     color: var(--text-white);
@@ -201,4 +200,52 @@ p {
     opacity: 0.431;
     border-radius: 14px;
     background-color: #ffffff;
+}
+
+/* client-btn-wrapper */
+.client-btn-wrapper h2 {
+    font-family: var(--secondary-font);
+}
+
+.client-btn-wrapper .see-client-btn {
+    padding: 20px 22px;
+    width: 200px !important;
+}
+
+/* feature-wrapper */
+.feature-wrapper {
+    background-color: #f1f1f1;
+}
+
+.feature-wrapper h2,
+.Consult-wrapper h2,
+.choose-wrapper {
+    font-size: 35px !important;
+}
+
+.feature-wrapper .text-sec {
+    width: 35%;
+}
+/*  */
+.choose-left{
+    background-image: url(../images/Rectangle.png);
+    height: 40vh;
+    position: relative;
+    width: 120%
+}
+.choose-left-a{
+    background-color: #ea6c00;
+    border-radius: 0% 100% 0% 100% / 100% 100% 0% 0% ;
+    height: 35vh;
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+}
+.choose-right>div p{
+    background-color: var(--bg-white);
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+.fa-circle-check{
+    margin-right: 20px;
 }
