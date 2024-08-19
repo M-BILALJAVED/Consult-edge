@@ -108,7 +108,7 @@
         width: 90%;
     }
 
-    .foooter-wrapper h2 {
+    .serachbr-wraper h2 {
         font-size: 23px !important;
     }
 }
@@ -149,5 +149,9 @@
     .boxes {
         --bs-gutter-x: 8px !important;
 
+    }
+    .swiper-button-prev,
+    .swiper-button-next{
+        color: #000 !important;
     }
 }
