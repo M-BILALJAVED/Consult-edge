@@ -226,26 +226,195 @@ p {
 .feature-wrapper .text-sec {
     width: 35%;
 }
+
+.feature-icon {
+    color: var(--primary-color);
+    font-size: clamp(1.875rem, 3vw, 2.5rem);
+}
+
 /*  */
-.choose-left{
+.choose-left {
     background-image: url(../images/Rectangle.png);
-    height: 40vh;
+    height: 400px;
     position: relative;
     width: 120%
 }
-.choose-left-a{
+
+.choose-left-a {
     background-color: #ea6c00;
-    border-radius: 0% 100% 0% 100% / 100% 100% 0% 0% ;
-    height: 35vh;
+    border-radius: 0% 100% 0% 100% / 100% 100% 0% 0%;
+    height: 350px;
     position: absolute;
     width: 90%;
     bottom: 0;
 }
-.choose-right>div p{
+
+.choose-right>div p {
     background-color: var(--bg-white);
     border-radius: 20px;
     padding: 10px 25px;
 }
-.fa-circle-check{
+
+.fa-circle-check {
     margin-right: 20px;
+}
+
+/* Portfolio */
+
+.swiper-button-next-custom {
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-icon);
+    display: grid;
+    place-items: center;
+    color: var(--text-white);
+    border: none;
+    cursor: pointer;
+}
+
+.nav-item .nav-link-tab {
+    background: transparent;
+    border: none;
+    color: var(--text-soft-gray);
+    padding: 10px 10px;
+    gap: 20px;
+    position: relative;
+}
+
+.nav-item .nav-link-tab:hover,
+.active {
+    color: var(--text-black) !important;
+    transition: tansform;
+}
+
+.nav-item .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+    left: 0;
+    bottom: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+}
+
+@keyframes myAnim {
+    0% {
+        transform: scalex(0);
+    }
+
+    100% {
+        transform: scalex(1);
+    }
+}
+
+/* swiper  */
+
+.mySwiper1 {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px !important;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySwiper1 .box-tabs p {
+    color: var(--text-gray);
+}
+
+/* client review */
+.review-box img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* star  */
+.star-rating {
+    direction: rtl;
+    /* Right to left for reverse order */
+    display: inline-flex;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+    /* Hide the radio buttons */
+}
+
+.star-rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating label:before {
+    content: "\2605";
+    /* Unicode star */
+}
+
+.star-rating input:checked~label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: gold;
+}
+
+/* footer  */
+.foooter-wrapper {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
+.ft-search {
+    width: 50%;
+}
+
+.ft-search input {
+    padding: 15px 20px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.ft-search .search-btn {
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--text-white);
+    cursor: pointer;
+    transition: transform .8s ease;
+}
+
+.search-btn:hover {
+    transform: scale(1.1);
+}
+
+.foooter-wrapper li {
+    font-weight: 200;
+    /* line-height: 22px !important; */
+    padding: 5px 0;
+}
+
+.ft-contact-us i {
+    background-color: var(--bg-white);
+    color: var(--primary-icon);
+    padding: 9px;
+    border-radius: 50%;
+    margin-right: 10px;
 }

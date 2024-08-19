@@ -52,7 +52,7 @@
         width: 100%;
     }
 
-    .full-choose-left{
+    .full-choose-left {
         padding-top: 2vh !important;
     }
 
@@ -102,6 +102,14 @@
     .box3 img,
     .box4 img {
         width: 25px;
+    }
+
+    .ft-search {
+        width: 90%;
+    }
+
+    .foooter-wrapper h2 {
+        font-size: 23px !important;
     }
 }
 

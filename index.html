@@ -8,11 +8,18 @@
   <!-- our own style  -->
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <script src="js/main.js"></script>
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/57efafa6c2.js" crossorigin="anonymous"></script>
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <style>
+
+  </style>
+
 </head>
 
 <body>
@@ -109,7 +116,7 @@
           <div class="row g-4">
             <div class="col-6">
               <div class="feature-card bg-white rounded-3 px-3 py-4">
-                <div class="icon"><i class="bi bi-lightning-fill"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
                 <h4>Fast</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua.</p>
@@ -117,21 +124,21 @@
             </div>
             <div class="col-6">
               <div class="feature-card bg-white rounded-3 px-3 py-4">
-                <div class="icon"><i class="bi bi-clock-fill"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-truck-fast"></i></div>
                 <h4>Efficient</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
               </div>
             </div>
             <div class="col-6">
               <div class="feature-card bg-white rounded-3 px-3 py-4">
-                <div class="icon"><i class="bi bi-award-fill"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-award"></i></div>
                 <h4>Strategy</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div class="col-6">
               <div class="feature-card bg-white rounded-3 px-3 py-4">
-                <div class="icon"><i class="bi bi-shield-fill"></i></div>
+                <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <h4>Reliable</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                   et dolore magna aliqua.</p>
@@ -216,8 +223,552 @@
   </section>
 
 
+  <section class="Portfolio-wrapper">
+    <div class="container my-5">
+      <div class="d-flex justify-content-between px-md-5 pb-3">
+        <h2>Our Portfolio</h2>
+        <div class="swiper-button-next-custom rounded-circle ">
+          <i class="fa-solid fa-greater-than"></i>
+        </div>
+
+      </div>
+
+      <!-- tabs -->
+      <ul class="nav nav-pills mb-3 gap-md-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link-tab active" id="pills-porject-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-porject" type="button" role="tab" aria-controls="pills-project"
+            aria-selected="true">New Project</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link-tab" id="pills-Marketing-tab" data-bs-toggle="pill" data-bs-target="#pills-Marketing"
+            type="button" role="tab" aria-controls="pills-Marketing" aria-selected="false">Digital Marketing</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link-tab" id="pills-Branding-tab" data-bs-toggle="pill" data-bs-target="#pills-Branding"
+            type="button" role="tab" aria-controls="pills-Branding" aria-selected="false">Branding Identity</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link-tab" id="pills-Website-tab" data-bs-toggle="pill" data-bs-target="#pills-Website"
+            type="button" role="tab" aria-controls="pills-Website" aria-selected="false">Website</button>
+        </li>
+      </ul>
+
+
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-porject" role="tabpanel" aria-labelledby="pills-porject-tab"
+          tabindex="0">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/1.jpg" max-width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/2.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/4.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/5.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/1.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper JS -->
+        </div>
+        <div class="tab-pane fade" id="pills-Marketing" role="tabpanel" aria-labelledby="pills-Marketing-tab"
+          tabindex="0">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/5.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/4.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/2.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/1.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/2.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper JS -->
+        </div>
+        <div class="tab-pane fade" id="pills-Branding" role="tabpanel" aria-labelledby="pills-Branding-tab"
+          tabindex="0">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/1.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/2.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/4.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/5.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/1.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper JS -->
+        </div>
+        <div class="tab-pane fade" id="pills-Website" role="tabpanel" aria-labelledby="pills-Website-tab" tabindex="0">
+          <!-- Swiper -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/5.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/4.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/2.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/1.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/3.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/6.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="box-tabs text-start">
+                  <img src="images/2.jpg" width: 278px; height: 187px; alt="" srcset="">
+                  <h4 class="mt-3">Website project</h4>
+                  <p>Lorem ipsum dolor sit amet, consecteturunt maiores laudantium cum deleniti, exercitationem eum.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Swiper JS -->
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </section>
+
+  <section class="review-wrapper" style="background-color: #f1f1f1;">
+    <div class="container py-5">
+      <div class="d-flex justify-content-between pb-4">
+        <div class="swiper-button-prev position-relative m-0"></div>
+        <h2 class="pt-3">What Client Say</h2>
+        <div class="swiper-button-next position-relative m-0"></div>
+      </div>
+      <!-- Slider main container -->
+      <div class="swiper mySwiper-review">
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="review-box px-3 py-3">
+              <i class="fa-solid fa-quote-left align-text-top"></i>
+              <span class="" style="font-size: 25px;">BILAL JAVED</span>
+              <p style="font-size: 15px; padding-top: 15px;">We have been partners for many years, and the decision has
+                proven to be very wise. They are not just business consultants, but true partners who care
+                success of our business. </p>
+              <div class="d-flex">
+                <img src="images/mypic.png" width="200px" alt="">
+                <span class="ms-4 align-text-bottom">
+                  <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 stars"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 stars"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 stars"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2" checked />
+                    <label for="star2" title="2 stars"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 star"></label>
+                  </div>
+                  <p class="fw-bold" style="font-size: 16px !important;">BILAL JAVED</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-box px-3 py-3">
+              <i class="fa-solid fa-quote-left align-text-top"></i>
+              <span class="" style="font-size: 25px;">BILAL JAVED</span>
+              <p style="font-size: 15px; padding-top: 15px;">We have been partners for many years, and the decision has
+                proven to be very wise. They are not just business consultants, but true partners who care
+                success of our business. </p>
+              <div class="d-flex">
+                <img src="images/mypic.png" width="200px" alt="">
+                <span class="ms-4 align-text-bottom">
+                  <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 stars"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 stars"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 stars"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2" checked />
+                    <label for="star2" title="2 stars"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 star"></label>
+                  </div>
+                  <p class="fw-bold" style="font-size: 16px !important;">BILAL JAVED</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-box px-3 py-3">
+              <i class="fa-solid fa-quote-left align-text-top"></i>
+              <span class="" style="font-size: 25px;">BILAL JAVED</span>
+              <p style="font-size: 15px; padding-top: 15px;">We have been partners for many years, and the decision has
+                proven to be very wise. They are not just business consultants, but true partners who care
+                success of our business. </p>
+              <div class="d-flex">
+                <img src="images/mypic.png" width="200px" alt="">
+                <span class="ms-4 align-text-bottom">
+                  <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 stars"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 stars"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 stars"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2" checked />
+                    <label for="star2" title="2 stars"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 star"></label>
+                  </div>
+                  <p class="fw-bold" style="font-size: 16px !important;">BILAL JAVED</p>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-box px-3 py-3">
+              <i class="fa-solid fa-quote-left align-text-top"></i>
+              <span class="" style="font-size: 25px;">BILAL JAVED</span>
+              <p style="font-size: 15px; padding-top: 15px;">We have been partners for many years, and the decision has
+                proven to be very wise. They are not just business consultants, but true partners who care
+                success of our business. </p>
+              <div class="d-flex">
+                <img src="images/mypic.png" width="200px" alt="">
+                <span class="ms-4 align-text-bottom">
+                  <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5" title="5 stars"></label>
+
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4" title="4 stars"></label>
+
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3" title="3 stars"></label>
+
+                    <input type="radio" id="star2" name="rating" value="2" checked />
+                    <label for="star2" title="2 stars"></label>
+
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1" title="1 star"></label>
+                  </div>
+                  <p class="fw-bold" style="font-size: 16px !important;">BILAL JAVED</p>
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="foooter-wrapper">
+    <div class="container">
+      <div class="text-center pt-5">
+        <h2>Please ask questions or contact <br>
+          the contacts below</h2>
+        <div class="ft-search m-auto mt-4">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search here..." aria-label="Recipient's username"
+              aria-describedby="basic-addon2">
+            <span class="search-btn input-group-text" id="basic-addon2">Send Now</span>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-8 col-12">
+          <div class="row">
+            <div class="col-md-4 col-6">
+              <ul>
+                <h3>Product</h3>
+                <li><a href="">Digital Marketing</a></li>
+                <li><a href="">Brand Design</a></li>
+                <li><a href="">Social Media</a></li>
+                <li><a href="">UI UX Design</a></li>
+            </div>
+            <div class="col-md-4 col-6">
+              <ul>
+                <h3>Service</h3>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Solution</a></li>
+            </div>
+            <div class="col-md-4 col-12 text-center">
+              <ul>
+                <h3>Company</h3>
+                <li><a href="">About</a></li>
+                <li><a href="">Bootcamp</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Help</a></li>
+            </div>
+          </div>
+
+          </ul>
+        </div>
+        <div class="col-md-4 col-12">
+          <ul class="ft-contact-us">
+            <h3>Contact Us</h3>
+            <li><i class="fa-solid fa-envelope"></i>BILALJAVED@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i>0303 183183</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- our own js  -->
+  <script src="js/main.js"></script>
+
   <!-- bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
 </body>
 
 </html>
